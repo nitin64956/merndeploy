@@ -42,6 +42,10 @@ app.post('/login',(req,res) => {
     .catch(err => res.json(err))
 })
 
+app.get('/',(req,res) => {
+    res.json("Hello login");
+})
+
 app.post('/register',(req,res) => {
     UserModel.create(req.body)
     .then(users => res.json(users))
