@@ -23,7 +23,7 @@ function Login() {
             }
         }
         )
-        .catch(err => console.log(err))
+        .catch(err => console.log("login err",err))
 
     }
     return (
